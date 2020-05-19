@@ -1,0 +1,19 @@
+<input type="checkbox"
+       [attr.name]="data?.id"
+       (change)="onChange()"
+       [(ngModel)]="data.isChecked"
+       [indeterminate]="data?.isIndeterminate">
+
+<div (click)="onClick();"
+     [ngClass]="{'caret':data?.children?.length, 'caret--down':data?.children?.length && data?.isOpen}"
+     class="label">{{data?.name}}</div>
+
+<ul *ngIf="data?.children?.length"
+    [ngClass]="{'node--active': data?.isOpen}"
+    class="node">
+
+  <li *ngFor="let item of data?.children; trackBy: trackBy;"
+      [data]="item"
+      [attr.data-node-id]="item?.id"
+      app-checkbox-tree-node></li>
+</ul>

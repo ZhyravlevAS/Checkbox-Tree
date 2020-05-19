@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "strictNullChecks": false,
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "@angular/*": ["node_modules/@angular/*"],
+      "Dynamic/*": ["src/app/dynamic/*"],
+      "Core/*": ["src/app/core/*"],
+      "Shared/*": ["src/app/shared/*"],
+      "DropDownMenu/*": ["src/app/shared/drop-down-menu/*"],
+      "Notification/*": ["src/app/shared/notification/*"],
+      "PopupWindow/*": ["src/app/shared/popup-window/*"],
+      "Table/*": ["src/app/shared/table/*"],
+      "UI/*": ["src/app/shared/ui/*"],
+      "Validators/*": ["src/app/validators/*"],
+      "Pipes/*": ["src/app/pipes/*"],
+      "Filters/*": ["src/app/filters/*"],
+      "Directives/*": ["src/app/directives/*"],
+      "Custom/*": ["src/app/custom/*"]
+    },
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "hammerjs",
+      "node"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/**/*.spec.ts",
+    "src/**/*.e2e.ts"
+  ],
+  "angularCompilerOptions": {
+    "skipMetadataEmit": true
+  },
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": {
+    "rewriteTsconfig": false
+  }
+}

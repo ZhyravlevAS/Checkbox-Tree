@@ -1,0 +1,18 @@
+<div class="container-fluid full-height">
+  <div class="row">
+    <div class="col-12 pt-3">
+      <input type="text" class="form-control form-control-sm mr-1 d-inline-block" placeholder="ID элемента"
+             [(ngModel)]="nodeId" style="width: 100px;">
+      <button class="btn btn-sm btn-primary mr-1" (click)="onToggleNode();">Показать / скрыть</button>
+      <button class="btn btn-sm btn-primary" (click)="onChangeCheckbox();">Выбрать / убрать чекбокс</button>
+    </div>
+  </div>
+  <div class="row full-height">
+    <div class="col-12 col-sm-6 py-3 scrollable">
+      <app-checkbox-tree-root class="d-block"></app-checkbox-tree-root>
+    </div>
+    <div class="col-12 col-sm-6 py-3 scrollable">
+      <app-list class="d-block" [data]="selectedData"></app-list>
+    </div>
+  </div>
+</div>
