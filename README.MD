@@ -1,7 +1,7 @@
 Инициализация дерева
 -
 
-Добавить в шаблон тэг компонента: <code><app-checkbox-tree-root></app-checkbox-tree-root></code>
+Добавить в шаблон тэг компонента: `<app-checkbox-tree-root></app-checkbox-tree-root>`
 
 В классе добавить ссылку на компонент:
 <pre>
